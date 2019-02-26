@@ -16,12 +16,12 @@ export default class MainProfile extends Component {
             <div>
                 <Container>
                     <Col xs={6} md={4}>
-                        <Image src={this.props.profile.gravatar_url} roundedCircle />
+                        <Image src={this.props.profile.gravatar_url} rounded />
                     </Col>
                 </Container>
 
                 <h1>{this.props.profile.name}</h1>
-                <h3>{this.props.profile.profile_name}</h3>
+                <h3><span className="text-muted">Profile Name: </span>{this.props.profile.profile_name}</h3>
                 
 
             </div>
